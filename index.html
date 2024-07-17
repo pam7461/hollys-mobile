@@ -27,7 +27,6 @@
             width:360px;
             margin:0 auto;             
             overflow:hidden;  
-            height:1000px;    
         }
         .container{
             width:340px;
@@ -128,6 +127,7 @@
             box-shadow:none;
             border:none;
             background:none;
+            margin-bottom:0;
         }
         .bx-wrapper .bx-pager{
             bottom:12px;
@@ -145,14 +145,55 @@
 
 
         /* q-icons style */
-
-
+        .q-icons{
+            padding:16px 0;
+        }
+        .q-icons li{
+            float:left;
+            width:85px;
+        }
+        .q-icons li a{
+            display:block;
+        }
+        .q-icons li a .img-box{
+            width:35px;
+            margin:0 auto 10px;
+        }
+        .q-icons li a p{
+            text-align:center;
+        }
 
         /* sub-banner style */
-
-
-
+        .sub-banner li{
+            margin:4px 0;
+        }
         /* notice style */
+        .notice{
+            padding:16px 0;
+        }
+        .notice-top{margin-bottom:16px;}
+        .notice-top h2,.notice-tit{float:left;}
+        .notice-top a,.notice-date{float:right;}
+        .notice-top h2{font-weight:900;}
+        .notice-top a{
+            display:block;
+            padding-right:12px;
+            font-weight:900;
+            font-size:12px;
+            color:var(--main-color);
+            position:relative;
+        }
+        .notice-top a::after{
+            content:'';
+            display:block;
+            width:6px;
+            height:6px;            
+            border:3px solid transparent;            
+            border-left-color:var(--main-color);
+            position:absolute;
+            right:0;
+            top:5px;
+        }
 
 
 
@@ -194,13 +235,57 @@
             </div>
         </section>
         <section class="sec sec02 q-icons">
-            <div class="container"></div>
+            <div class="container">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <div class="img-box"><img src="./images/ico-menu01.jpg" alt="menu01"></div>
+                            <p>Hollys mall</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img-box"><img src="./images/ico-menu02.jpg" alt="menu02"></div>
+                            <p>Menu</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img-box"><img src="./images/ico-menu03.jpg" alt="menu03"></div>
+                            <p>Store</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img-box"><img src="./images/ico-menu04.jpg" alt="menu04"></div>
+                            <p>Membership</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="sec sec03 sub-banner">
-            <div class="container wide-container"></div>
+            <div class="container wide-container">
+                <ul>
+                    <li><a href="#"><img src="./images/img-banner01.jpg" alt="sub01"></a></li>
+                    <li><a href="#"><img src="./images/img-banner02.jpg" alt="sub02"></a></li>
+                    <li><a href="#"><img src="./images/img-banner03.jpg" alt="sub03"></a></li>
+                    <li><a href="#"><img src="./images/img-banner04.jpg" alt="sub04"></a></li>
+                    <li><a href="#"><img src="./images/img-banner05.jpg" alt="sub05"></a></li>
+                </ul>
+            </div>
         </section>
         <section class="sec sec04 notice">
-            <div class="container"></div>
+            <div class="container">
+                <div class="notice-top clearfix">
+                    <h2>Notice</h2>
+                    <a href="#">more</a>
+                </div>
+                <ul class="clearfix">
+                    <li class="notice-tit"><a href="#">개인정보 처리방침 개정안내</a></li>
+                    <li class="notice-date"><a href="#">2024-06-24</a></li>
+                </ul>
+            </div>
         </section>
         <footer class="footer">
             <div class="container"></div>
