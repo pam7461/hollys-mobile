@@ -199,7 +199,46 @@
 
 
         /* footer style */
-
+        .footer{
+            padding:70px 0 54px;
+            background:var(--main-color);
+            color:#fff;
+            position:relative;
+        }
+        .footer .footer-nav01{
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            border-top:2px solid var(--gray03);
+            border-bottom:1px solid var(--gray03);
+            background:var(--gray04);
+            padding:18px 0;
+        }
+        .footer .footer-nav01 li{
+            float:left;
+            width:180px;            
+            font-weight:700;
+            font-size:16px;
+            color:var(--gray01);
+            text-align:center;
+        }
+        .footer .footer-nav01 li:first-child{
+            border-right:1px solid var(--gray03);
+        }
+        .footer .footer-nav02{
+            margin-bottom:16px;
+            text-align:center;
+            font-size:12px;
+            line-height:1.5;
+        }
+        .footer .footer-nav02 a{
+            margin:5px;
+        }
+        .footer address{
+            font-size:12px;
+            line-height:1.2;
+        }
     </style>
 </head>
 <body>
@@ -288,7 +327,28 @@
             </div>
         </section>
         <footer class="footer">
-            <div class="container"></div>
+            <div class="container">
+                <ul class="clearfix footer-nav01">
+                    <li><a href="#">가맹문의 절차</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+                <div class="footer-nav02">
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">서비스 이용약관</a>
+                    <a href="#">멤버십 이용약관</a>
+                    <a href="#">할리스카드이용약관</a>
+                    <a href="#">고객문의</a>
+                    <a href="#">고객설문</a>
+                    <a href="#">사이트맵</a>
+                    <a href="#">BI 소개</a>                    
+                    <a href="https://pam7461.github.io/hollys/">PC버전</a>
+                </div>
+                <address>
+                    법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호<br>
+                    주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229)<br>            
+                    COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved. 
+                </address>
+            </div>
         </footer>
     </section>
 
