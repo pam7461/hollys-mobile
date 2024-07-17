@@ -23,10 +23,44 @@
             line-height:1;
             color:var(--gray01);
         }
+        .wrap{
+            width:360px;
+            margin:0 auto;             
+            overflow:hidden;      
+        }
+        .container{
+            width:340px;
+            margin:0 auto;
+            height:100px;
+        }
+        .wide-container{
+            width:360px;
+        }
+        
+
     </style>
 </head>
 <body>
-    
+    <section class="wrap">
+        <header class="header">
+            <div class="container"></div>
+        </header>
+        <section class="sec sec01 main-banner">
+            <div class="container wide-container"></div>
+        </section>
+        <section class="sec sec02 q-icons">
+            <div class="container"></div>
+        </section>
+        <section class="sec sec03 sub-banner">
+            <div class="container wide-container"></div>
+        </section>
+        <section class="sec sec04 notice">
+            <div class="container"></div>
+        </section>
+        <footer class="footer">
+            <div class="container"></div>
+        </footer>
+    </section>
 
 
     <script src="./js/jquery-3.1.1.min.js"></script>
