@@ -97,15 +97,24 @@
             left:0;
             top:4px;
         }
-
-
-
-
-
         /* aside style */
         .aside{
             position:fixed;
+            left:10px;
+            top:10px;
             z-index:1001;
+        }
+        .aside a{
+            display:block;
+            width:70px;
+            height:25px;
+            border-radius:12.5px;
+            background:#c5a46e;
+            font-weight:500;
+            font-size:12px;
+            text-align:center;
+            line-height:25px;
+            color:#fff;
         }
 
         /* main-banner style */
@@ -113,7 +122,25 @@
             position:relative;
             z-index:999;
         }
-
+        .bx-wrapper {
+            -moz-box-shadow:none;
+            -webkit-box-shadow:none;
+            box-shadow:none;
+            border:none;
+            background:none;
+        }
+        .bx-wrapper .bx-pager{
+            bottom:12px;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            width:7px;
+            height:7px;
+            margin:0 3px;
+            background:#d9d9d9;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a.active{
+            background:var(--main-color);
+        }
 
 
 
@@ -153,9 +180,18 @@
                 </nav>
             </div>
         </header>
-        <aside class="aside"></aside>
+        <aside class="aside">
+            <a href="#">가맹문의</a>
+        </aside>
         <section class="sec sec01 main-banner">
-            <div class="container wide-container"></div>
+            <div class="container wide-container">
+                <ul class="slider">
+                    <li><a href="#"><img src="./images/main-banner01.jpg" alt="main-banner01"></a></li>
+                    <li><a href="#"><img src="./images/main-banner02.jpg" alt="main-banner02"></a></li>
+                    <li><a href="#"><img src="./images/main-banner03.jpg" alt="main-banner03"></a></li>
+                    <li><a href="#"><img src="./images/main-banner04.jpg" alt="main-banner04"></a></li>
+                </ul>
+            </div>
         </section>
         <section class="sec sec02 q-icons">
             <div class="container"></div>
@@ -175,7 +211,7 @@
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
     <script>
-        $('.slider').bxslider();
+        $('.slider').bxSlider();
         $('#btn-nav').click(function(){
             $('#toggle-nav').slideToggle();
         })
