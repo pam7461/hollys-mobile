@@ -139,8 +139,8 @@
         <header class="header">
             <div class="container clearfix">
                 <h1><a href="./index.html">할리스</a></h1>
-                <div class="btn-nav"><img src="./images/btn-nav.png" alt="nav button"></div>
-                <nav class="nav">
+                <div class="btn-nav" id="btn-nav"><img src="./images/btn-nav.png" alt="nav button"></div>
+                <nav class="nav" id="toggle-nav">
                     <ul class="main-nav">
                         <li><a href="#">my hollys</a></li>
                         <li><a href="#">menu</a></li>
@@ -176,6 +176,11 @@
     <script src="./js/jquery.bxslider.js"></script>
     <script>
         $('.slider').bxslider();
+        $('#btn-nav').click(function(){
+            $('#toggle-nav').slideToggle(300);
+        })
+
+
     </script>
 </body>
 </html>
