@@ -39,7 +39,30 @@
         .header{
             position:relative;
             z-index:1000;
+            padding:14px 0;
+            background:var(--main-color);
         }
+        .header .container::before{
+            content:'';
+            display:block;
+            float:left;
+            width:38px;
+            height:31px;
+        }
+        .header h1{
+            float:left;
+            width:264px;
+        }
+        .header .btn-nav{
+            float:right;
+        }
+
+        .nav{display:none;}
+
+
+
+
+
 
         /* aside style */
         .aside{
@@ -76,7 +99,21 @@
 <body>
     <section class="wrap">
         <header class="header">
-            <div class="container"></div>
+            <div class="container clearfix">
+                <h1><a href="./index.html">할리스</a></h1>
+                <div class="btn-nav"><img src="./images/btn-nav.png" alt="nav button"></div>
+                <nav class="nav">
+                    <ul class="main-nav">
+                        <li><a href="#">my hollys</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">hollys mall</a></li>
+                        <li><a href="#">membership</a></li>
+                        <li><a href="#">hollys news</a></li>
+                        <li><a href="#">store</a></li>
+                        <li><a href="#">hollys is</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <aside class="aside"></aside>
         <section class="sec sec01 main-banner">
